@@ -18,7 +18,7 @@ class Config(object):
     # A name for users - Required (str)
     BOT_NAME_FOR_USERS = "tgytdlp_bot" #name in database
     # List of administrator IDs
-    ADMIN = [00000000, 111111111111]
+    ADMIN = [0, 111111111111]
     ADMIN_USERNAME = "@"
     # Add allowed group IDs - Only these groups will be served by the bot
     ADMIN_GROUP = [-100111111111111, -1002222222222222]
@@ -26,7 +26,7 @@ class Config(object):
     # Restrict private chat usage to these user IDs only (empty list = everyone allowed)
     ALLOWED_USERS = []
     # API ID Telegram
-    API_ID = 00000000000000
+    API_ID = 0
     # API HASH Telegram
     API_HASH = "abc0000000000000000000"
     # Bot token
