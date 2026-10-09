@@ -90,7 +90,6 @@ Dockerfile
 
 # Config files with secrets (mounted as volume)
 .env
-CONFIG/config.py
 
 # Binary files
 yt-dlp
@@ -107,7 +106,6 @@ scripts/create_backup.py
 scripts/update_from_repo.py
 
 # PATCH files (if not needed at runtime)
-PATCH/
 
 # Session files
 channel_guard_session_string.txt
