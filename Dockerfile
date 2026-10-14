@@ -75,4 +75,4 @@ RUN sed -i 's/\r$//' /usr/local/bin/docker-entrypoint.sh && \
     find /app -type d -name __pycache__ -exec rm -rf {} + 2>/dev/null || true && \
     find /app -type f -name "*.pyc" -delete 2>/dev/null || true
 
-CMD ["/usr/local/bin/docker-entrypoint.sh"]
+CMD ["sh", "-c", "mkdir -p CONFIG && echo \"$CONFIG_PY\" > CONFIG/config.py && /usr/local/bin/docker-entrypoint.sh"]
