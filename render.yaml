@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: tg-ytdlp-bot
+    runtime: docker
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: CONFIG_PY
+        sync: false
